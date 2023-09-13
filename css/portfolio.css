@@ -1,0 +1,107 @@
+:root {
+  --blue: #2196f3;
+  --black: #212121;
+  --white: #ffffff;
+  --light-grey: #f5f4fa;
+  --dark-grey: #2f303a;
+  --grey: #757575;
+}
+
+.header {
+  border-bottom: #ececec solid 1px;
+}
+
+.header-logo {
+  color: var(--blue);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+
+.header-logo-accent {
+  color: #000;
+}
+
+.header-nav {
+}
+
+.header-nav-list {
+}
+
+.headr-nav-item {
+}
+
+.header-nav-link {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+
+.header-nav-link:hover {
+  color: var(--blue);
+}
+
+.header-address {
+}
+
+.header-address-list {
+}
+
+.header-address-item {
+}
+
+.header-address-link {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+
+.header-address-link:hover {
+  color: var(--blue);
+}
+
+.footer {
+  background: var(--dark-grey);
+}
+
+.footer-logo {
+  color: var(--blue);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+
+.footer-logo-accent {
+  color: var(--white);
+}
+
+.footer-address {
+}
+
+.footer-list {
+}
+
+.footer-item {
+}
+
+.footer-map {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.42px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.42px;
+}
