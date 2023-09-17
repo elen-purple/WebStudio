@@ -12,18 +12,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  text-decoration-line: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-button {
-  cursor: pointer;
-}
-
 .header {
   background-color: var(--light-text);
   border-bottom: #ececec solid 1px;
