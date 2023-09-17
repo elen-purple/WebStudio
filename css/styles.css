@@ -1,10 +1,11 @@
 :root {
-  --blue: #2196f3;
-  --black: #212121;
-  --white: #ffffff;
-  --light-grey: #f5f4fa;
-  --dark-grey: #2f303a;
-  --grey: #757575;
+  --accent: #2196f3;
+  --dark-text: #212121;
+  --light-backgrond: #ffffff;
+  --light-text: #ffffff;
+  --team-background: #f5f4fa;
+  --dark-background: #2f303a;
+  --middle-text: #757575;
 }
 
 body {
@@ -24,70 +25,68 @@ button {
 }
 
 .header {
+  background-color: var(--light-text);
   border-bottom: #ececec solid 1px;
 }
 
 .header-logo {
-  color: var(--blue);
+  color: var(--accent);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
 
-.header-logo-accent {
+.header-accent {
   color: #000;
 }
 
 .header-nav {
 }
 
-.header-nav-list {
+.header-list {
 }
 
-.headr-nav-item {
+.headr-item {
 }
 
-.header-nav-link {
-  color: var(--black);
+.header-link {
+  color: var(--dark-text);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 
-.header-nav-link:hover {
-  color: var(--blue);
+.header-link:hover {
+  color: var(--accent);
+}
+
+.header-contacts {
+}
+
+.header-contact {
 }
 
 .header-address {
-}
-
-.header-address-list {
-}
-
-.header-address-item {
-}
-
-.header-address-link {
-  color: var(--grey);
+  color: var(--middle-text);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 
-.header-address-link:hover {
-  color: var(--blue);
+.header-address:hover {
+  color: var(--accent);
 }
 
 .main {
 }
 
 .hero {
-  background: var(--dark-grey);
+  background: var(--dark-background);
 }
 
 .hero-title {
-  color: var(--white);
+  color: var(--light-text);
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -97,20 +96,21 @@ button {
 }
 
 .hero-btn {
-  color: var(--white, #fff);
+  color: var(--light-text);
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: var(--blue);
+  background: var(--accent);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 10px 32px;
 }
 
 .advantages {
+  background-color: var(--light-text);
 }
 
 .advantages-list {
@@ -120,7 +120,7 @@ button {
 }
 
 .advantages-subtitle {
-  color: var(--black);
+  color: var(--dark-text);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -128,7 +128,7 @@ button {
 }
 
 .advantanges-desc {
-  color: var(--grey);
+  color: var(--middle-text);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -136,10 +136,11 @@ button {
 }
 
 .doing {
+  background-color: var(--light-text);
 }
 
 .doing-title {
-  color: var(--black);
+  color: var(--dark-text);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -156,11 +157,11 @@ button {
 }
 
 .team {
-  background: var(--light-grey);
+  background: var(--team-background);
 }
 
 .team-title {
-  color: var(--black);
+  color: var(--dark-text);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -174,7 +175,7 @@ button {
   width: 270px;
   height: 368px;
   border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
+  background: var(--light-text);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -182,8 +183,8 @@ button {
 .team-img {
 }
 
-.team-sub-title {
-  color: var(--black);
+.team-subtitle {
+  color: var(--dark-text);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -191,7 +192,7 @@ button {
 }
 
 .team-prof {
-  color: var(--grey);
+  color: var(--middle-text);
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -199,19 +200,19 @@ button {
 }
 
 .footer {
-  background: var(--dark-grey);
+  background: var(--dark-background);
 }
 
 .footer-logo {
-  color: var(--blue);
+  color: var(--accent);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
 
-.footer-logo-accent {
-  color: var(--white);
+.footer-accent {
+  color: var(--light-text);
 }
 
 .footer-address {
@@ -224,7 +225,7 @@ button {
 }
 
 .footer-map {
-  color: var(--white);
+  color: var(--light-text);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;

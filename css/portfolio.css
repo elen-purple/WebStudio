@@ -1,10 +1,11 @@
 :root {
-  --blue: #2196f3;
-  --black: #212121;
-  --white: #ffffff;
-  --light-grey: #f5f4fa;
-  --dark-grey: #2f303a;
-  --grey: #757575;
+  --accent: #2196f3;
+  --dark-text: #212121;
+  --light-backgrond: #ffffff;
+  --light-text: #ffffff;
+  --button-background: #f5f4fa;
+  --dark-background: #2f303a;
+  --middle-text: #757575;
 }
 
 body {
@@ -24,59 +25,57 @@ button {
 }
 
 .header {
+  background-color: var(--light-text);
   border-bottom: #ececec solid 1px;
 }
 
 .header-logo {
-  color: var(--blue);
+  color: var(--accent);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
 
-.header-logo-accent {
+.header-accent {
   color: #000;
 }
 
 .header-nav {
 }
 
-.header-nav-list {
+.header-list {
 }
 
-.headr-nav-item {
+.headr-item {
 }
 
-.header-nav-link {
-  color: var(--black);
+.header-link {
+  color: var(--dark-text);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 
-.header-nav-link:hover {
-  color: var(--blue);
+.header-link:hover {
+  color: var(--accent);
+}
+
+.header-contacts {
+}
+
+.header-contact {
 }
 
 .header-address {
-}
-
-.header-address-list {
-}
-
-.header-address-item {
-}
-
-.header-address-link {
-  color: var(--grey);
+  color: var(--middle-text);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 
-.header-address-link:hover {
-  color: var(--blue);
+.header-address:hover {
+  color: var(--accent);
 }
 
 .main {
@@ -88,51 +87,51 @@ button {
 .portfolio-title {
 }
 
-.portfolio-button-list {
+.portfolio-buttons {
 }
 
-.portfolio-button-item {
+.portfolio-button {
 }
 
-.portfolio-button-btn {
-  color: var(--black);
+.portfolio-btn {
+  color: var(--dark-text);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.48px;
   border-radius: 4px;
-  background: var(--light-grey);
+  background: var(--button-background);
   border: none;
   padding: 6px 22px;
 }
 
-.portfolio-button-btn:hover {
+.portfolio-btn:hover {
   padding: 6px 25px;
-  color: var(--white, #fff);
-  background: var(--blue);
+  color: var(--light-text);
+  background: var(--accent);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-project-list {
+.portfolio-projects {
 }
 
-.portfolio-project-item {
+.portfolio-project {
   border: 1px solid #eee;
-  background: var(--white, #fff);
+  background-color: var(--light-backgrond);
   width: 370px;
   height: 404px;
 }
 
-.portfolio-project-link {
+.portfolio-link {
 }
 
-.portfolio-project-img {
+.portfolio-img {
 }
 
-.portfolio-project-subtitle {
-  color: var(--black);
+.portfolio-subtitle {
+  color: var(--dark-text);
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
@@ -140,8 +139,8 @@ button {
   letter-spacing: 1.08px;
 }
 
-.portfolio-project-type {
-  color: var(--grey);
+.portfolio-type {
+  color: var(--middle-text);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
@@ -150,19 +149,19 @@ button {
 }
 
 .footer {
-  background: var(--dark-grey);
+  background: var(--dark-background);
 }
 
 .footer-logo {
-  color: var(--blue);
+  color: var(--accent);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
 
-.footer-logo-accent {
-  color: var(--white);
+.footer-accent {
+  color: var(--light-text);
 }
 
 .footer-address {
@@ -175,7 +174,7 @@ button {
 }
 
 .footer-map {
-  color: var(--white);
+  color: var(--light-text);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
