@@ -12,7 +12,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: darkred dashed;
+}
+
 .header {
+  /* padding: 24px 0 25px 0; */
   background-color: var(--light-text);
   border-bottom: #ececec solid 1px;
 }
