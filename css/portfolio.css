@@ -13,13 +13,14 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   outline: darkred dashed;
 }
 
 .header {
+  padding: 24px 0;
   background-color: var(--light-text);
   border-bottom: #ececec solid 1px;
 }
@@ -77,6 +78,7 @@ body {
 }
 
 .portfolio {
+  padding: 94px 0;
 }
 
 .portfolio-title {
@@ -144,6 +146,7 @@ body {
 }
 
 .footer {
+  padding: 60px 0;
   background: var(--dark-background);
 }
 

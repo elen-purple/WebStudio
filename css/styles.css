@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  /* padding: 24px 0 25px 0; */
+  padding: 24px 0;
   background-color: var(--light-text);
   border-bottom: #ececec solid 1px;
 }
@@ -78,6 +78,7 @@ body {
 }
 
 .hero {
+  padding: 200px 0;
   background: var(--dark-background);
 }
 
@@ -106,6 +107,7 @@ body {
 }
 
 .advantages {
+  padding: 94px 0 47px;
   background-color: var(--light-text);
 }
 
@@ -132,6 +134,7 @@ body {
 }
 
 .doing {
+  padding: 47px 0 94px;
   background-color: var(--light-text);
 }
 
@@ -153,6 +156,7 @@ body {
 }
 
 .team {
+  padding: 94px 0;
   background: var(--team-background);
 }
 
@@ -196,6 +200,7 @@ body {
 }
 
 .footer {
+  padding: 60px 0;
   background: var(--dark-background);
 }
 
