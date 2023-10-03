@@ -25,6 +25,12 @@ body {
   border-bottom: #ececec solid 1px;
 }
 
+.header-conainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .header-logo {
   color: var(--accent);
   font-family: Raleway;
@@ -41,6 +47,10 @@ body {
 }
 
 .header-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 93px;
 }
 
 .headr-item {
@@ -58,6 +68,10 @@ body {
 }
 
 .header-contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: auto;
 }
 
 .header-contact {
@@ -82,19 +96,26 @@ body {
   background: var(--dark-background);
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
   color: var(--light-text);
-  text-align: center;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 696px;
+  text-align: center;
 }
 
 .hero-btn {
   color: var(--light-text);
-  text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -111,10 +132,16 @@ body {
   background-color: var(--light-text);
 }
 
+.advantages-container {
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages-item {
+  max-width: 270px;
 }
 
 .advantages-subtitle {
@@ -123,6 +150,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantanges-desc {
@@ -144,9 +172,12 @@ body {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 
 .doing-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .doing-item {
@@ -166,14 +197,17 @@ body {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 
 .team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-item {
   width: 270px;
-  height: 368px;
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background: var(--light-text);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -189,6 +223,8 @@ body {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-prof {
@@ -217,9 +253,13 @@ body {
 }
 
 .footer-address {
+  margin-top: 20px;
 }
 
 .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .footer-item {
