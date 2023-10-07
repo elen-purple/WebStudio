@@ -25,7 +25,7 @@ body {
   border-bottom: #ececec solid 1px;
 }
 
-.header-conainer {
+.header-container {
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -20,6 +20,13 @@ img {
   line-height: 0;
 }
 
+.portfolio-project {
+  line-height: 0;
+}
+img {
+  line-height: 0;
+}
+
 a {
   text-decoration-line: none;
 }

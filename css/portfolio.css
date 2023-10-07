@@ -25,6 +25,12 @@ body {
   border-bottom: #ececec solid 1px;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .header-logo {
   color: var(--accent);
   font-family: Raleway;
@@ -41,6 +47,10 @@ body {
 }
 
 .header-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 93px;
 }
 
 .headr-item {
@@ -58,6 +68,10 @@ body {
 }
 
 .header-contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: auto;
 }
 
 .header-contact {
@@ -81,10 +95,10 @@ body {
   padding: 94px 0;
 }
 
-.portfolio-title {
-}
-
 .portfolio-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
 
 .portfolio-button {
@@ -112,12 +126,20 @@ body {
 }
 
 .portfolio-projects {
+  margin-top: 50px;
+  display: flex;
+  height: 1272px;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 .portfolio-project {
   border: 1px solid #eee;
   background-color: var(--light-backgrond);
-  width: 370px;
+  max-width: 370px;
   height: 404px;
 }
 
@@ -127,6 +149,11 @@ body {
 .portfolio-img {
 }
 
+.portfolio-wraper {
+  padding: 0 24px 20px;
+  margin-top: 20px;
+}
+
 .portfolio-subtitle {
   color: var(--dark-text);
   font-family: Roboto;
@@ -134,6 +161,7 @@ body {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
+  margin-bottom: 4px;
 }
 
 .portfolio-type {
@@ -163,9 +191,13 @@ body {
 }
 
 .footer-address {
+  margin-top: 20px;
 }
 
 .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .footer-item {
