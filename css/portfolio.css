@@ -13,7 +13,8 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   outline: darkred dashed;
@@ -129,24 +130,23 @@ body {
   margin-top: 50px;
   display: flex;
   height: 1272px;
-  justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .portfolio-project {
   border: 1px solid #eee;
   background-color: var(--light-backgrond);
-  max-width: 370px;
   height: 404px;
+  width: 100%;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-link {
 }
 
 .portfolio-img {
+  width: 100%;
 }
 
 .portfolio-wraper {
