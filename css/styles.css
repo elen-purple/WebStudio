@@ -145,6 +145,34 @@ body {
   max-width: 270px;
 }
 
+.advantages-item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.advantages-item:first-child:before {
+  background-image: url(../img/advantanges/advan-1.png);
+}
+
+.advantages-item:nth-child(2):before {
+  background-image: url(../img/advantanges/advan-2.png);
+}
+
+.advantages-item:nth-child(3):before {
+  background-image: url(../img/advantanges/advan-3.png);
+}
+
+.advantages-item:nth-child(4):before {
+  background-image: url(../img/advantanges/advan-4.png);
+}
+
 .advantages-subtitle {
   color: var(--dark-text);
   font-size: 14px;
