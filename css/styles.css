@@ -28,7 +28,6 @@ body {
 
 .header-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -49,7 +48,6 @@ body {
 
 .header-list {
   display: flex;
-  flex-direction: row;
   gap: 50px;
   margin-left: 93px;
 }
@@ -70,7 +68,6 @@ body {
 
 .header-contacts {
   display: flex;
-  flex-direction: row;
   gap: 50px;
   margin-left: auto;
 }
