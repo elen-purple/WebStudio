@@ -8,6 +8,10 @@
   --middle-text: #757575;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -85,8 +89,22 @@ body {
   letter-spacing: 0.28px;
 }
 
-.header-address:hover {
+.header-address:hover .header-text {
   color: var(--accent);
+}
+
+.header-address {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-icon {
+  fill: var(--middle-text);
+}
+
+.header-address:hover .header-icon {
+  fill: var(--accent);
 }
 
 .main {
@@ -182,6 +200,15 @@ body {
   background: var(--dark-background);
 }
 
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-wrap {
+  padding-top: 12px;
+}
+
 .footer-logo {
   color: var(--accent);
   font-family: Raleway;
@@ -223,4 +250,42 @@ body {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.42px;
+}
+
+.footer-text {
+  color: var(--light-text);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-medias {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-run {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-run:hover {
+  background-color: var(--accent);
+}
+
+.footer-icon {
+  stroke: var(--light-text);
+  fill: var(--light-text);
+}
+
+.footer-media:nth-child(2) .footer-icon {
+  fill: none;
 }

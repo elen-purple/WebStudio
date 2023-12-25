@@ -8,8 +8,17 @@
   --middle-text: #757575;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+*::selection {
+  background-color: var(--accent);
+  color: var(--light-text);
 }
 
 .container {
@@ -66,9 +75,13 @@ body {
   color: var(--accent);
 }
 
+.header-address:hover .header-text {
+  color: var(--accent);
+}
+
 .header-contacts {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   margin-left: auto;
 }
 
@@ -76,14 +89,24 @@ body {
 }
 
 .header-address {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-icon {
+  fill: var(--middle-text);
+}
+
+.header-address:hover .header-icon {
+  fill: var(--accent);
+}
+
+.header-text {
   color: var(--middle-text);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
-}
-
-.header-address:hover {
-  color: var(--accent);
 }
 
 .main {
@@ -96,7 +119,7 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/hero/hero-background.webp);
-  background-repeat: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -148,7 +171,14 @@ body {
   max-width: 270px;
 }
 
-.advantages-item::before {
+.advan-wrapper {
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+/* .advantages-item::before {
   content: "";
   display: block;
   width: 270px;
@@ -175,7 +205,7 @@ body {
 
 .advantages-item:nth-child(4):before {
   background-image: url(../img/advantanges/advan-4.png);
-}
+} */
 
 .advantages-subtitle {
   color: var(--dark-text);
@@ -268,9 +298,90 @@ body {
   letter-spacing: 0.48px;
 }
 
+.team-medias {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-link:hover {
+  background-color: var(--accent);
+}
+
+.team-icon {
+  stroke: #afb1b8;
+  fill: #afb1b8;
+}
+
+.team-link:hover .team-icon {
+  stroke: var(--light-text);
+  fill: var(--light-text);
+}
+
+.team-media:nth-child(2) .team-icon {
+  fill: none;
+}
+
+.customers {
+  padding: 94px 0;
+}
+
+.customers-title {
+  color: var(--dark-text);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.customers-link {
+  display: block;
+  padding: 15px 31px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+.customers-link:hover {
+  border: 1px solid var(--accent);
+}
+
+.customers-item:hover .customers-icon {
+  fill: var(--accent);
+}
+
+.customers-icon {
+  fill: #afb1b8;
+}
+
 .footer {
   padding: 60px 0;
   background: var(--dark-background);
+}
+
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-wrap {
+  padding-top: 12px;
 }
 
 .footer-logo {
@@ -314,4 +425,42 @@ body {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.42px;
+}
+
+.footer-text {
+  color: var(--light-text);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-medias {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-run {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-run:hover {
+  background-color: var(--accent);
+}
+
+.footer-icon {
+  stroke: var(--light-text);
+  fill: var(--light-text);
+}
+
+.footer-media:nth-child(2) .footer-icon {
+  fill: none;
 }
