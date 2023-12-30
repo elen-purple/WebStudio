@@ -16,6 +16,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+*::selection {
+  background-color: var(--accent);
+  color: var(--light-text);
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
