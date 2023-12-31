@@ -161,7 +161,8 @@ body {
   padding: 10px 32px;
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
   background: #046ec3;
 }
 
