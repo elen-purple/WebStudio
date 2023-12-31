@@ -16,6 +16,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 *::selection {
   background-color: var(--accent);
   color: var(--light-text);
@@ -71,11 +75,13 @@ body {
   letter-spacing: 0.28px;
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent);
 }
 
-.header-address:hover .header-text {
+.header-address:hover .header-text,
+.header-address:focus .header-text {
   color: var(--accent);
 }
 
@@ -98,7 +104,8 @@ body {
   fill: var(--middle-text);
 }
 
-.header-address:hover .header-icon {
+.header-address:hover .header-icon,
+.header-address:focus .header-icon {
   fill: var(--accent);
 }
 
@@ -152,6 +159,10 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 10px 32px;
+}
+
+.hero-btn:hover {
+  background: #046ec3;
 }
 
 .advantages {
@@ -314,7 +325,8 @@ body {
   border-radius: 50%;
 }
 
-.team-link:hover {
+.team-link:hover,
+.team-link:focus {
   background-color: var(--accent);
 }
 
@@ -323,7 +335,8 @@ body {
   fill: #afb1b8;
 }
 
-.team-link:hover .team-icon {
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
   stroke: var(--light-text);
   fill: var(--light-text);
 }
@@ -358,11 +371,13 @@ body {
   border: 1px solid #afb1b8;
 }
 
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--accent);
 }
 
-.customers-item:hover .customers-icon {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--accent);
 }
 
@@ -418,6 +433,11 @@ body {
   letter-spacing: 0.42px;
 }
 
+.footer-map:hover,
+.footer-map:focus {
+  color: var(--accent);
+}
+
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -425,6 +445,11 @@ body {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.42px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent);
 }
 
 .footer-text {
@@ -452,7 +477,8 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-run:hover {
+.footer-run:hover,
+.footer-run:focus {
   background-color: var(--accent);
 }
 
