@@ -615,6 +615,10 @@ body {
 .modal-form {
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal-close {
   background-color: transparent;
   line-height: 0;
