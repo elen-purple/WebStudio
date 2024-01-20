@@ -708,6 +708,7 @@ body {
   letter-spacing: 0.12px;
   margin-bottom: 20px;
   margin-top: 4px;
+  resize: none;
 }
 
 .modal-message:hover,
