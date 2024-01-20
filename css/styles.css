@@ -65,7 +65,23 @@ body {
   margin-left: 93px;
 }
 
-.headr-item {
+.header-item {
+  position: relative;
+}
+
+.header-item:nth-child(1) .header-link {
+  color: var(--accent);
+}
+
+.header-item:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--accent);
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  top: 45px;
 }
 
 .header-link {

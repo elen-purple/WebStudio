@@ -65,7 +65,23 @@ body {
   margin-left: 93px;
 }
 
-.headr-item {
+.header-item {
+  position: relative;
+}
+
+.header-item:nth-child(2) .header-link {
+  color: var(--accent);
+}
+
+.header-item:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--accent);
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  top: 45px;
 }
 
 .header-link {
@@ -179,8 +195,43 @@ body {
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-img {
   width: 100%;
+}
+
+.portfolio-info {
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  padding: 63px 24px;
+  transition: transform 0.5s;
+}
+
+.portfolio-project:hover .portfolio-info {
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  padding: 63px 24px;
+  transform: translate(0, -100%);
+}
+
+.portfolio-text {
+  color: var(--light-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+  letter-spacing: 0.54px;
 }
 
 .portfolio-wraper {
