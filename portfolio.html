@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
   <body>
-    <header id="header-portfolio" class="header">
+    <header class="header">
       <div class="container header-container">
         <!-- logo -->
         <a lang="en" href="./index.html" class="header-logo">
@@ -64,7 +64,7 @@
     </header>
     <main class="main">
       <!-- potfolio section -->
-      <section class="portfolio">
+      <section class="portfolio" id="header-portfolio">
         <div class="container">
           <!-- portfolio title -->
           <h1 class="portfolio-title" hidden>Портфоліо</h1>
@@ -418,5 +418,12 @@
         </form>
       </div>
     </footer>
+    <div class="container scroll">
+      <a href="#header-portfolio" class="scroll-link">
+        <svg class="scroll-icon" width="35" height="17">
+          <use href="./img/svg/icons.svg#scroll-top"></use>
+        </svg>
+      </a>
+    </div>
   </body>
 </html>

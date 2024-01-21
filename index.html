@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header id="header" class="header">
+    <header class="header">
       <div class="container header-container">
         <!-- logo -->
         <a lang="en" href="./index.html" class="header-logo">
@@ -64,7 +64,7 @@
     </header>
     <main class="main">
       <!-- hero -->
-      <section class="hero">
+      <section class="hero" id="header">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="hero-btn" type="button">
@@ -660,6 +660,13 @@
           <button type="submit" class="modal-btn">Відправити</button>
         </form>
       </div>
+    </div>
+    <div class="container scroll">
+      <a href="#header" class="scroll-link">
+        <svg class="scroll-icon" width="35" height="17">
+          <use href="./img/svg/icons.svg#scroll-top"></use>
+        </svg>
+      </a>
     </div>
     <script src="./js/modal.js"></script>
   </body>

@@ -663,3 +663,35 @@ body {
 .modal-btn:focus {
   background: #046ec3;
 }
+
+.scroll.container {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 70px;
+}
+
+.scroll-link {
+  display: block;
+  background-color: var(--accent);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-text);
+  position: absolute;
+  top: 0;
+  right: -70px;
+}
+
+.scroll-link:hover,
+.scroll-link:focus {
+  background-color: #046ec3;
+}
+
+.scroll-icon {
+  fill: var(--light-text);
+}

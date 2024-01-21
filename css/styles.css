@@ -37,6 +37,11 @@ body {
   padding: 24px 0;
   background-color: var(--light-text);
   border-bottom: #ececec solid 1px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .header-container {
@@ -131,18 +136,19 @@ body {
   font-weight: 500;
   letter-spacing: 0.28px;
 }
-
 .main {
 }
 
 .hero {
   padding: 200px 0;
+  padding-top: 280px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/hero/hero-background.webp);
-  background-size: cover;
+  background-size: cover auto;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 
@@ -610,6 +616,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .backdrop.is-hidden {
@@ -821,4 +828,36 @@ body {
 .modal-btn:hover,
 .modal-btn:focus {
   background: #046ec3;
+}
+
+.scroll.container {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 70px;
+}
+
+.scroll-link {
+  display: block;
+  background-color: var(--accent);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-text);
+  position: absolute;
+  top: 0;
+  right: -70px;
+}
+
+.scroll-link:hover,
+.scroll-link:focus {
+  background-color: #046ec3;
+}
+
+.scroll-icon {
+  fill: var(--light-text);
 }
