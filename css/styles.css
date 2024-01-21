@@ -645,7 +645,9 @@ body {
 .modal-close {
   background-color: transparent;
   line-height: 0;
-  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   border: rgba(0, 0, 0, 0.1) 1px solid;
   position: absolute;
