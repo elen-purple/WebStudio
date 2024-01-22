@@ -42,11 +42,13 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
+  box-shadow: 0px 9px 14.9px #ececec;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  z-index: 9;
 }
 
 .header-logo {
@@ -94,10 +96,47 @@ body {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  position: relative;
+  z-index: 5;
 }
 
 .header-link:hover,
 .header-link:focus {
+  color: var(--accent);
+}
+
+.header-sublist {
+  position: absolute;
+  top: 48px;
+  z-index: 3;
+  transition: opacity 0.5s;
+  background-color: var(--light-backgrond);
+  padding: 8px;
+  border: #ececec solid 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  opacity: 0;
+  border-radius: 4px;
+  box-shadow: 0px 9px 14.9px #ececec;
+}
+
+.header-item:hover .header-sublist {
+  opacity: 1;
+}
+
+.header-subitem {
+}
+
+.header-sublink {
+  color: var(--middle-text);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+
+.header-sublink:hover,
+.header-sublink:focus {
   color: var(--accent);
 }
 
