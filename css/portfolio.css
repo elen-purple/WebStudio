@@ -370,6 +370,11 @@ body {
   color: var(--accent);
 }
 
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent);
+}
+
 .footer-medias {
   display: flex;
   gap: 10px;
@@ -484,6 +489,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   height: 70px;
+  pointer-events: none;
 }
 
 .scroll-link {

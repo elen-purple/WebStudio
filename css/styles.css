@@ -877,6 +877,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   height: 70px;
+  pointer-events: none;
 }
 
 .scroll-link {
