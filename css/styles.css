@@ -893,6 +893,7 @@ body {
   position: absolute;
   top: 0;
   right: -70px;
+  pointer-events: all;
 }
 
 .scroll-link:hover,
