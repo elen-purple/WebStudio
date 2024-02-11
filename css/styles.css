@@ -90,6 +90,20 @@ body {
   border-radius: 2px;
   height: 4px;
   top: 45px;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: link-after-move;
+}
+
+@keyframes link-after-move {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(0, -7px);
+  }
 }
 
 .header-link {
@@ -216,22 +230,72 @@ body {
 }
 
 .hero-btn {
-  color: var(--light-text);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.96px;
   border-radius: 4px;
   background: var(--accent);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 10px 32px;
   transition: background-color var(--transition);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn::before {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 200px;
   background-color: #046ec3;
+  opacity: 0.5;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  border-radius: 50%;
+  transition: transform 1s ease-out;
+  z-index: 2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: btn-after-move;
+}
+
+@keyframes btn-after-move {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-text {
+  color: var(--light-text);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.96px;
+  position: relative;
+  z-index: 4;
+}
+
+.hero-btn::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #046ec3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 1s ease-out;
+  z-index: 3;
+}
+
+.hero-btn:hover::after {
+  transform: translate(-50%, 0) scale(30);
 }
 
 .advantages {
@@ -372,12 +436,17 @@ body {
 }
 
 .team-item {
+  transition: transform var(--transition);
   width: 270px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background: var(--light-text);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-item:hover {
+  transform: translate(0, -24px);
 }
 
 .team-img {
@@ -885,20 +954,42 @@ body {
   background: var(--accent);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
+  padding: 10px 52px;
+  margin: 30px auto 0;
+  display: block;
+  transition: background-color var(--transition);
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-btn::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #046ec3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 1s ease-out;
+  z-index: 2;
+}
+
+.modal-btn:hover::after {
+  transform: translate(-50%, 0) scale(21);
+}
+
+.modal-desc {
   color: var(--light-text);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.96px;
-  padding: 10px 52px;
-  margin: 30px auto 0;
-  display: block;
-  transition: background-color var(--transition);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #046ec3;
+  z-index: 3;
+  position: relative;
 }
 
 .scroll.container {
