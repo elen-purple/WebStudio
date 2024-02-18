@@ -1,0 +1,29 @@
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/scroll";
+
+@import "./sections/portfolio-sections/portfolio";
+
+.header-item:nth-child(2) .header-link {
+    color: var(--accent);
+}
+
+.header-item:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--accent);
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    top: 45px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: link-after-move;
+}

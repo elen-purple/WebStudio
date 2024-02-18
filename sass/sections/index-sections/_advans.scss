@@ -1,0 +1,68 @@
+.advans {
+    padding: 94px 0 47px;
+    background-color: var(--light-text);
+}
+
+.advans-container {}
+
+.advans-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advans-item {
+    max-width: 270px;
+}
+
+.advans-wrapper {
+    padding: 25px 100px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+/* .advan-item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.advan-item:first-child:before {
+  background-image: url(../img/advantanges/advan-1.png);
+}
+
+.advan-item:nth-child(2):before {
+  background-image: url(../img/advantanges/advan-2.png);
+}
+
+.advan-item:nth-child(3):before {
+  background-image: url(../img/advantanges/advan-3.png);
+}
+
+.advan-item:nth-child(4):before {
+  background-image: url(../img/advantanges/advan-4.png);
+} */
+
+.advans-subtitle {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advans-desc {
+    color: var(--middle-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}

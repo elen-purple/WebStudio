@@ -1,0 +1,41 @@
+.customers {
+    padding: 94px 0;
+}
+
+.customers-title {
+    color: var(--dark-text);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.customers-link {
+    display: block;
+    padding: 15px 31px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    transition: border var(--transition);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--accent);
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+    fill: var(--accent);
+}
+
+.customers-icon {
+    fill: #afb1b8;
+    transition: fill var(--transition);
+}

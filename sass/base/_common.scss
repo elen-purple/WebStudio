@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+*::selection {
+    background-color: var(--accent);
+    color: var(--light-text);
+}

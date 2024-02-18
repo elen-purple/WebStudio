@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.doing-item {
+    line-height: 0;
+}
+
+.portfolio-project {
+    line-height: 0;
+}
+
+img {
+    line-height: 0;
+    display: block;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
