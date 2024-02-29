@@ -1,6 +1,5 @@
 .portfolio {
     padding: 94px 0;
-    padding-top: 174px;
 }
 
 .portfolio-buttons {
@@ -12,24 +11,24 @@
 .portfolio-button {}
 
 .portfolio-btn {
-    color: var(--dark-text);
+    color: $dark-text;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.63;
     letter-spacing: 0.48px;
     border-radius: 4px;
-    background: var(--button-background);
+    background: $team-background;
     border: none;
     padding: 6px 22px;
-    transition: background-color var(--transition), color var(--transition),
-        box-shadow var(--transition);
+    transition: background-color $transition, color $transition,
+        box-shadow $transition;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    color: var(--light-text);
-    background-color: var(--accent);
+    color: $light-text;
+    background-color: $accent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -43,7 +42,7 @@
 }
 
 .portfolio-project {
-    background-color: var(--light-backgrond);
+    background-color: $light-background;
     height: 404px;
     width: 100%;
     flex-basis: calc((100% - 60px) / 3);
@@ -52,7 +51,7 @@
 .portfolio-link {
     display: block;
     border: 1px solid #eee;
-    transition: box-shadow var(--transition);
+    transition: box-shadow $transition;
 }
 
 .portfolio-link:hover,
@@ -78,7 +77,7 @@
     top: 100%;
     left: 0;
     padding: 63px 24px;
-    transition: transform var(--transition);
+    transition: transform $transition;
 }
 
 .portfolio-link:hover .portfolio-info,
@@ -94,7 +93,7 @@
 }
 
 .portfolio-text {
-    color: var(--light-text);
+    color: $light-text;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.56;
@@ -107,7 +106,7 @@
 }
 
 .portfolio-subtitle {
-    color: var(--dark-text);
+    color: $dark-text;
     font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
@@ -117,7 +116,7 @@
 }
 
 .portfolio-type {
-    color: var(--middle-text);
+    color: $middle-text;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;

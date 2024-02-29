@@ -1,90 +1,88 @@
 .team {
     padding: 94px 0;
-    background: var(--team-background);
-}
+    background: $team-background;
 
-.team-title {
-    color: var(--dark-text);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
+    &__title {
+        color: $dark-text;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
 
-.team-list {
-    display: flex;
-    justify-content: space-between;
-}
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.team-item {
-    transition: transform var(--transition);
-    width: 270px;
-    padding-bottom: 30px;
-    border-radius: 0px 0px 4px 4px;
-    background: var(--light-text);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
+    &__item {
+        transition: transform $transition;
+        width: 270px;
+        padding-bottom: 30px;
+        border-radius: 0px 0px 4px 4px;
+        background: $light-text;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
 
-.team-item:hover {
-    transform: translate(0, -24px);
-}
+    &__item:hover {
+        transform: translate(0, -24px);
+    }
 
-.team-img {}
+    &__subtitle {
+        color: $dark-text;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 
-.team-subtitle {
-    color: var(--dark-text);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
+    &__prof {
+        color: $middle-text;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+    }
 
-.team-prof {
-    color: var(--middle-text);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.48px;
-}
+    &__medias {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 16px;
+    }
 
-.team-medias {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 16px;
-}
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: background-color $transition;
+    }
 
-.team-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color var(--transition);
-}
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent;
+    }
 
-.team-link:hover,
-.team-link:focus {
-    background-color: var(--accent);
-}
+    &__icon {
+        stroke: $grey;
+        fill: $grey;
+        transition: fill $transition;
+    }
 
-.team-icon {
-    stroke: #afb1b8;
-    fill: #afb1b8;
-    transition: fill var(--transition);
-}
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        stroke: $light-text;
+        fill: $light-text;
+    }
 
-.team-link:hover .team-icon,
-.team-link:focus .team-icon {
-    stroke: var(--light-text);
-    fill: var(--light-text);
-}
-
-.team-media:nth-child(2) .team-icon {
-    fill: none;
+    &__media:nth-child(2) &__icon {
+        fill: none;
+    }
 }

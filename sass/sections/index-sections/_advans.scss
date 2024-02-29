@@ -1,24 +1,39 @@
 .advans {
-    padding: 94px 0 47px;
-    background-color: var(--light-text);
-}
+  padding: 94px 0 47px;
+  background-color: $light-text;
 
-.advans-container {}
-
-.advans-list {
+  &__list {
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.advans-item {
+  &__item {
     max-width: 270px;
-}
+  }
 
-.advans-wrapper {
+  &__wrapper {
     padding: 25px 100px;
-    background-color: #f5f4fa;
+    background-color: $team-background;
     margin-bottom: 30px;
     border-radius: 4px;
+  }
+
+  &__subtitle {
+    color: $dark-text;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    color: $middle-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
 }
 
 /* .advan-item::before {
@@ -49,20 +64,3 @@
 .advan-item:nth-child(4):before {
   background-image: url(../img/advantanges/advan-4.png);
 } */
-
-.advans-subtitle {
-    color: var(--dark-text);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.advans-desc {
-    color: var(--middle-text);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}

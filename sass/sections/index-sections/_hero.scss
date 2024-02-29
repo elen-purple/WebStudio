@@ -1,60 +1,88 @@
 .hero {
     padding: 200px 0;
-    padding-top: 280px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../img/hero/hero-background.webp);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-}
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.hero-title {
-    color: var(--light-text);
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    max-width: 696px;
-    text-align: center;
-}
+    &__title {
+        color: $light-text;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        max-width: 696px;
+        text-align: center;
+    }
 
-.hero-btn {
-    border-radius: 4px;
-    background: var(--accent);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    padding: 10px 32px;
-    transition: background-color var(--transition);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
+    &__btn {
+        border-radius: 4px;
+        background: $accent;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        padding: 10px 32px;
+        transition: background-color $transition;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
 
-.hero-btn::before {
-    content: "";
-    display: block;
-    width: 250px;
-    height: 200px;
-    background-color: #046ec3;
-    opacity: 0.5;
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    border-radius: 50%;
-    transition: transform 1s ease-out;
-    z-index: 2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-name: btn-after-move;
+    &__btn::before {
+        content: "";
+        display: block;
+        width: 250px;
+        height: 200px;
+        background-color: $accent-hover;
+        opacity: 0.5;
+        position: absolute;
+        top: 70%;
+        left: 20%;
+        border-radius: 50%;
+        transition: transform 1s ease-out;
+        z-index: 2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-name: btn-after-move;
+    }
+
+    &__text {
+        color: $light-text;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.96px;
+        position: relative;
+        z-index: 4;
+    }
+
+    &__btn::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: $accent-hover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        transition: transform 1s ease-out;
+        z-index: 3;
+    }
+
+    &__btn:hover::after {
+        transform: translate(-50%, 0) scale(30);
+    }
 }
 
 @keyframes btn-after-move {
@@ -65,33 +93,4 @@
     100% {
         transform: rotate(360deg);
     }
-}
-
-.hero-text {
-    color: var(--light-text);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.96px;
-    position: relative;
-    z-index: 4;
-}
-
-.hero-btn::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: #046ec3;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    transition: transform 1s ease-out;
-    z-index: 3;
-}
-
-.hero-btn:hover::after {
-    transform: translate(-50%, 0) scale(30);
 }

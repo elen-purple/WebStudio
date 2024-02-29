@@ -6,23 +6,23 @@
 @import "./components/header";
 @import "./components/footer";
 @import "./components/scroll";
+@import "./components/modal";
 
 @import "./sections/index-sections/hero";
 @import "./sections/index-sections/advans";
 @import "./sections/index-sections/doing";
 @import "./sections/index-sections/team";
 @import "./sections/index-sections/customers";
-@import "./sections/index-sections/modal";
 
-.header-item:nth-child(1) .header-link {
-    color: var(--accent);
+.header__item:nth-child(1) .header__link {
+    color: $accent;
 }
 
-.header-item:nth-child(1)::after {
+.header__item:nth-child(1)::after {
     content: "";
     display: block;
     position: absolute;
-    background-color: var(--accent);
+    background-color: $accent;
     width: 100%;
     border-radius: 2px;
     height: 4px;

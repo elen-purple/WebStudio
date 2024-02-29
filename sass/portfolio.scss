@@ -9,15 +9,15 @@
 
 @import "./sections/portfolio-sections/portfolio";
 
-.header-item:nth-child(2) .header-link {
-    color: var(--accent);
+.header__item:nth-child(2) .header__link {
+    color: $accent;
 }
 
-.header-item:nth-child(2)::after {
+.header__item:nth-child(2)::after {
     content: "";
     display: block;
     position: absolute;
-    background-color: var(--accent);
+    background-color: $accent;
     width: 100%;
     border-radius: 2px;
     height: 4px;

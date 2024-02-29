@@ -1,36 +1,36 @@
-.scroll.container {
+.scroll {
     position: fixed;
     bottom: 50px;
     left: 50%;
     transform: translate(-50%, 0);
     height: 70px;
     pointer-events: none;
-}
 
-.scroll-link {
-    display: block;
-    background-color: var(--accent);
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light-text);
-    position: absolute;
-    top: 0;
-    right: -70px;
-    pointer-events: all;
-    transition: background-color var(--transition), box-shadow var(--transition);
-}
+    &__link {
+        display: block;
+        background-color: $accent;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $light-text;
+        position: absolute;
+        top: 0;
+        right: -70px;
+        pointer-events: all;
+        transition: background-color $transition, box-shadow $transition;
+    }
 
-.scroll-link:hover,
-.scroll-link:focus {
-    background-color: #046ec3;
-    box-shadow: 0px 7px 2px 0px rgba(0, 0, 0, 0.12),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-hover;
+        box-shadow: 0px 7px 2px 0px rgba(0, 0, 0, 0.12),
+            0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
 
-.scroll-icon {
-    fill: var(--light-text);
+    &__icon {
+        fill: $light-text;
+    }
 }
