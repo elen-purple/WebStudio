@@ -364,14 +364,12 @@ body {
 .portfolio {
   padding: 94px 0;
 }
-
-.portfolio-buttons {
+.portfolio__buttons {
   display: flex;
   gap: 8px;
   justify-content: center;
 }
-
-.portfolio-btn {
+.portfolio__btn {
   color: #212121;
   text-align: center;
   font-size: 16px;
@@ -384,50 +382,40 @@ body {
   padding: 6px 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
-.portfolio-projects {
+.portfolio__projects {
   margin-top: 50px;
   display: flex;
   height: 1272px;
   flex-wrap: wrap;
   gap: 30px;
 }
-
-.portfolio-project {
+.portfolio__project {
   background-color: #ffffff;
   height: 404px;
   width: 100%;
   flex-basis: calc((100% - 60px) / 3);
 }
-
-.portfolio-link {
+.portfolio__link {
   display: block;
   border: 1px solid #eee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
-.portfolio-wrap {
+.portfolio__wrap {
   position: relative;
   overflow: hidden;
 }
-
-.portfolio-img {
+.portfolio__img {
   width: 100%;
 }
-
-.portfolio-info {
+.portfolio__info {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   width: 100%;
@@ -437,9 +425,7 @@ body {
   padding: 63px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-link:hover .portfolio-info,
-.portfolio-link:focus .portfolio-info {
+.portfolio__link:hover .portfolio__info, .portfolio__link:focus .portfolio__info {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   width: 100%;
@@ -449,21 +435,18 @@ body {
   padding: 63px 24px;
   transform: translate(0, -100%);
 }
-
-.portfolio-text {
+.portfolio__text {
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.54px;
 }
-
-.portfolio-wraper {
+.portfolio__wraper {
   padding: 0 24px 20px;
   margin-top: 20px;
 }
-
-.portfolio-subtitle {
+.portfolio__subtitle {
   color: #212121;
   font-family: Roboto;
   font-size: 18px;
@@ -472,8 +455,7 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 4px;
 }
-
-.portfolio-type {
+.portfolio__type {
   color: #757575;
   font-family: Roboto;
   font-size: 16px;
