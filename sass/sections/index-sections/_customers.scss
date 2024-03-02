@@ -20,7 +20,7 @@
         display: block;
         padding: 15px 31px;
         border-radius: 4px;
-        border: 1px solid #afb1b8;
+        border: 1px solid $grey;
         transition: border $transition;
     }
 
@@ -35,7 +35,7 @@
     }
 
     &__icon {
-        fill: #afb1b8;
+        fill: $grey;
         transition: fill $transition;
     }
 }
