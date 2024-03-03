@@ -24,10 +24,10 @@
         background: $light-text;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    }
 
-    &__item:hover {
-        transform: translate(0, -24px);
+        &:hover {
+            transform: translate(0, -24px);
+        }
     }
 
     &__subtitle {
@@ -63,11 +63,11 @@
         height: 44px;
         border-radius: 50%;
         transition: background-color $transition;
-    }
 
-    &__link:hover,
-    &__link:focus {
-        background-color: $accent;
+        &:hover,
+        &:focus {
+            background-color: $accent;
+        }
     }
 
     &__icon {

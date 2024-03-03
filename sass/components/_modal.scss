@@ -95,11 +95,11 @@
         font-weight: 400;
         letter-spacing: 0.12px;
         transition: border $transition;
-    }
 
-    &__input:hover,
-    &__input:focus {
-        border: 1px solid $accent;
+        &:hover,
+        &:focus {
+            border: 1px solid $accent;
+        }
     }
 
     &__icon {
@@ -130,11 +130,11 @@
         margin-top: 4px;
         resize: none;
         transition: border $transition;
-    }
 
-    &__message:hover,
-    &__message:focus {
-        border: 1px solid $accent;
+        &:hover,
+        &:focus {
+            border: 1px solid $accent;
+        }
     }
 
     &__wrap {
@@ -146,9 +146,6 @@
 
     &__check {
         position: relative;
-    }
-
-    &__check {
         border-radius: 2px;
         background-color: transparent;
     }
@@ -165,21 +162,22 @@
         border: 2px solid #000;
         position: relative;
         cursor: pointer;
-    }
 
-    &__fake::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 16px;
-        height: 15px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: $accent;
-        opacity: 0;
-        border-radius: 2px;
-        transition: opacity $transition;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 16px;
+            height: 15px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $accent;
+            opacity: 0;
+            border-radius: 2px;
+            transition: opacity $transition;
+        }
+
     }
 
     &__checkbox:checked+&__fake::before {
@@ -219,25 +217,25 @@
         z-index: 1;
         position: relative;
         overflow: hidden;
-    }
 
-    &__btn::after {
-        content: "";
-        display: block;
-        width: 10px;
-        height: 10px;
-        background-color: $accent-hover;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        border-radius: 50%;
-        transition: transform 1s ease-out;
-        z-index: 2;
-    }
+        &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: $accent-hover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+            transition: transform 1s ease-out;
+            z-index: 2;
+        }
 
-    &__btn:hover::after {
-        transform: translate(-50%, 0) scale(21);
+        &:hover::after {
+            transform: translate(-50%, 0) scale(21);
+        }
     }
 
     &__desc {

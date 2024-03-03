@@ -289,9 +289,6 @@ body {
   letter-spacing: 0.48px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__input:hover, .footer__input:focus {
-  border: 1px solid #2196f3;
-}
 .footer__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -305,6 +302,9 @@ body {
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.48px;
+}
+.footer__input:hover, .footer__input:focus {
+  border: 1px solid #2196f3;
 }
 .footer__btn {
   display: flex;
