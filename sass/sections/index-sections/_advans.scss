@@ -3,8 +3,7 @@
   background-color: $light-text;
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @include flex($justify: space-between, $align: start);
   }
 
   &__item {
@@ -19,18 +18,14 @@
   }
 
   &__subtitle {
-    color: $dark-text;
-    font-size: 14px;
-    font-weight: 700;
+    @include text($weight: 700);
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
 
   &__desc {
-    color: $middle-text;
-    font-size: 14px;
-    font-weight: 400;
+    @include text($color: $middle-text);
     line-height: 1.71;
     letter-spacing: 0.42px;
   }

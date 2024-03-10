@@ -3,7 +3,7 @@
     background: $dark-background;
 
     &__container {
-        display: flex;
+        @include flex($justify: start, $align: start);
         gap: 70px;
     }
 
@@ -12,6 +12,7 @@
     }
 
     &__logo {
+        @include text($color: $accent, $size: 26px, $weight: 700);
         color: $accent;
         font-family: Raleway;
         font-size: 26px;
@@ -28,15 +29,13 @@
     }
 
     &__list {
-        display: flex;
+        @include flex($justify: start, $align: start);
         flex-direction: column;
         gap: 9px;
     }
 
     &__map {
-        color: $light-text;
-        font-size: 14px;
-        font-weight: 400;
+        @include text($color: $light-text);
         line-height: 1.71;
         font-style: normal;
         letter-spacing: 0.42px;
@@ -49,9 +48,7 @@
     }
 
     &__link {
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 14px;
-        font-weight: 400;
+        @include text($color: rgba(255, 255, 255, 0.6));
         line-height: 1.71;
         font-style: normal;
         letter-spacing: 0.42px;
@@ -64,14 +61,12 @@
     }
 
     &__medias {
-        display: flex;
+        @include flex($justify: start, $align: start);
         gap: 10px;
     }
 
     &__run {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex();
         width: 44px;
         height: 44px;
         padding: 12px;
@@ -100,16 +95,14 @@
     }
 
     &__title {
-        color: $light-text;
-        font-size: 14px;
-        font-weight: 700;
+        @include text($color: $light-text, $weight: 700);
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
 
     &__label {
-        display: flex;
+        @include flex($justify: start, $align: start);
         gap: 12px;
     }
 
@@ -127,9 +120,7 @@
         width: 358px;
         height: 50px;
         padding-left: 16px;
-        color: $light-text;
-        font-size: 16px;
-        font-weight: 400;
+        @include text($color: $light-text, $size: 16px);
         line-height: 1.25;
         letter-spacing: 0.48px;
         transition: border $transition;
@@ -149,11 +140,9 @@
     }
 
     &__btn {
-        display: flex;
+        @include flex($justify: start);
         align-items: center;
-        color: $light-text;
-        font-size: 16px;
-        font-weight: 700;
+        @include text($color: $light-text, $size: 16px, $weight: 700);
         line-height: 1.88;
         letter-spacing: 0.96px;
         border-radius: 4px;

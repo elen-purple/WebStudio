@@ -10,16 +10,13 @@
     box-shadow: 0px 9px 14.9px $light-grey;
 
     &__container {
-        display: flex;
-        align-items: center;
+        @include flex($justify: start);
         z-index: 9;
     }
 
     &__logo {
-        color: $accent;
+        @include text($color: $accent, $size: 26px, $weight: 700);
         font-family: Raleway;
-        font-size: 26px;
-        font-weight: 700;
         letter-spacing: 0.78px;
     }
 
@@ -28,7 +25,7 @@
     }
 
     &__list {
-        display: flex;
+        @include flex($justify: start, $align: start);
         gap: 50px;
         margin-left: 93px;
     }
@@ -38,9 +35,7 @@
     }
 
     &__link {
-        color: $dark-text;
-        font-size: 14px;
-        font-weight: 500;
+        @include text($weight: 500);
         letter-spacing: 0.28px;
         position: relative;
         z-index: 5;
@@ -60,25 +55,21 @@
         background-color: $light-background;
         padding: 8px;
         border: $light-grey solid 1px;
-        display: flex;
+        @include flex($justify: start, $align: start);
         flex-direction: column;
         gap: 4px;
         opacity: 0;
         border-radius: 4px;
         box-shadow: 0px 9px 14.9px $light-grey;
         transition: opacity $transition 0.5s;
-        pointer-events: none;
     }
 
     &__item:hover &__sublist {
         opacity: 1;
-        pointer-events: all;
     }
 
     &__sublink {
-        color: $middle-text;
-        font-size: 14px;
-        font-weight: 500;
+        @include text($color: $middle-text, $weight: 500);
         letter-spacing: 0.28px;
         transition: color $transition;
 
@@ -90,13 +81,13 @@
 
 
     &__contacts {
-        display: flex;
+        @include flex($justify: start, $align: start);
         gap: 30px;
         margin-left: auto;
     }
 
     &__address {
-        display: flex;
+        @include flex($justify: start);
         gap: 10px;
         align-items: center;
     }
@@ -112,9 +103,7 @@
     }
 
     &__text {
-        color: $middle-text;
-        font-size: 14px;
-        font-weight: 500;
+        @include text($color: $middle-text, $weight: 500);
         letter-spacing: 0.28px;
         transition: color $transition;
     }

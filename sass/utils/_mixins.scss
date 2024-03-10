@@ -1,0 +1,12 @@
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: wrap;
+}
+
+@mixin text($color: $dark-text, $size: 14px, $weight: 400) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}

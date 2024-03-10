@@ -8,12 +8,13 @@
     background-repeat: no-repeat;
 
     &__container {
-        display: flex;
+        @include flex($justify: start);
         flex-direction: column;
         align-items: center;
     }
 
     &__title {
+        @include text($color: $light-text, $size: 44px, $weight: 900);
         color: $light-text;
         font-size: 44px;
         font-weight: 900;
@@ -26,58 +27,12 @@
     }
 
     &__btn {
-        border-radius: 4px;
-        background: $accent;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        border: none;
+        @extend %button-styles;
         padding: 10px 32px;
-        transition: background-color $transition;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 10px;
-            height: 10px;
-            background-color: $accent-hover;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            border-radius: 50%;
-            transition: transform 1s ease-out;
-            z-index: 3;
-        }
-
-        &:hover::after {
-            transform: translate(-50%, 0) scale(30);
-        }
-
-        &::before {
-            content: "";
-            display: block;
-            width: 250px;
-            height: 200px;
-            background-color: $accent-hover;
-            opacity: 0.5;
-            position: absolute;
-            top: 70%;
-            left: 20%;
-            border-radius: 50%;
-            transition: transform 1s ease-out;
-            z-index: 2;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-name: btn-after-move;
-        }
     }
 
     &__text {
-        color: $light-text;
-        font-size: 16px;
-        font-weight: 700;
+        @include text($color: $light-text, $size: 16px, $weight: 700);
         line-height: 1.88;
         letter-spacing: 0.96px;
         position: relative;

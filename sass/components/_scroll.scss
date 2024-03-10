@@ -12,9 +12,7 @@
         border-radius: 50%;
         width: 70px;
         height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex();
         color: $light-text;
         position: absolute;
         top: 0;

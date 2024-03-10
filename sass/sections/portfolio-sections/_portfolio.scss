@@ -2,7 +2,7 @@
     padding: 94px 0;
 
     &__buttons {
-        display: flex;
+        @include flex($align: start);
         gap: 8px;
         justify-content: center;
     }
@@ -32,7 +32,7 @@
 
     &__projects {
         margin-top: 50px;
-        display: flex;
+        @include flex($justify: start, $align: start);
         height: 1272px;
         flex-wrap: wrap;
         gap: 30px;
