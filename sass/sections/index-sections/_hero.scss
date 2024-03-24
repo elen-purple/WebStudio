@@ -1,8 +1,7 @@
 .hero {
     padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/hero/hero-background.webp);
+            rgba(47, 48, 58, 0.4)), url(../img/hero/mobile-hero-bg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,6 +38,9 @@
 @media screen and (min-width: 768px) {
     .hero {
 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../img/hero/tablet-hero-bg.webp);
+
         &__btn {
             padding: 10px 24px;
         }
@@ -47,7 +49,7 @@
 
 @media screen and (min-width: 1200px) {
     .hero {
-
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-background.webp);
         padding: 200px 0;
 
         &__title {
