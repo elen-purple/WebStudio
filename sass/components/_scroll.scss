@@ -7,6 +7,7 @@
     pointer-events: none;
 
     &__link {
+        margin-left: auto;
         display: block;
         background-color: $accent;
         border-radius: 50%;
@@ -14,9 +15,6 @@
         height: 70px;
         @include flex();
         color: $light-text;
-        position: absolute;
-        top: 0;
-        right: -70px;
         pointer-events: all;
         transition: background-color $transition, box-shadow $transition;
 

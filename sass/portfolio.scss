@@ -1,5 +1,7 @@
 @import "./base/reset";
-@import "./base/vars";
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/common";
 @import "./base/container";
 

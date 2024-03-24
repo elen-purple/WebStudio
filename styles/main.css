@@ -97,19 +97,43 @@ body {
 }
 
 .block {
-  height: 79px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .block {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block {
+    height: 78px;
+  }
 }
 
 .container {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: darkred dashed; */
+  outline: darkred dashed;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
-  padding: 24px 0;
+  padding: 10px 0;
   background-color: #ffffff;
   border-bottom: #ececec solid 1px;
   width: 100%;
@@ -128,7 +152,7 @@ body {
 }
 .header__logo {
   color: #2196f3;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   font-family: Raleway;
   letter-spacing: 0.78px;
@@ -143,6 +167,7 @@ body {
   flex-wrap: wrap;
   gap: 50px;
   margin-left: 93px;
+  display: none;
 }
 .header__item {
   position: relative;
@@ -198,6 +223,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   margin-left: auto;
+  display: none;
 }
 .header__address {
   display: flex;
@@ -224,7 +250,74 @@ body {
 .header__address:hover .header__text, .header__address:focus .header__text {
   color: #2196f3;
 }
+.header__btn {
+  background-color: transparent;
+  margin-left: auto;
+}
+.header__burger {
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__burger:hover, .header__burger:focus {
+  fill: #2196f3;
+}
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+  .header__list {
+    display: flex;
+  }
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header__icon {
+    width: 14px;
+    height: 10px;
+  }
+  .header__contact:nth-child(2) .header__icon {
+    width: 10px;
+    height: 14px;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__text {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+  }
+  .header__logo {
+    color: #2196f3;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .header__contacts {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .header__icon {
+    width: 16px;
+    height: 12px;
+  }
+  .header__contact:nth-child(2) .header__icon {
+    width: 10px;
+    height: 16px;
+  }
+  .header__text {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 @keyframes link-after-move {
   0% {
     transform: translate(0);
@@ -415,6 +508,7 @@ body {
   pointer-events: none;
 }
 .scroll__link {
+  margin-left: auto;
   display: block;
   background-color: #2196f3;
   border-radius: 50%;
@@ -425,9 +519,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   color: #ffffff;
-  position: absolute;
-  top: 0;
-  right: -70px;
   pointer-events: all;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -637,10 +728,10 @@ body {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-background.webp);
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .hero__container {
@@ -649,24 +740,20 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
 }
 .hero__title {
   color: #ffffff;
-  font-size: 44px;
-  font-weight: 900;
-  color: #ffffff;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   text-align: center;
 }
 .hero__btn {
-  padding: 10px 32px;
+  padding: 10px 24px;
 }
 .hero__text {
   color: #ffffff;
@@ -678,6 +765,25 @@ body {
   z-index: 4;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    padding: 10px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+  .hero__title {
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: 900;
+    max-width: 696px;
+  }
+  .hero__btn {
+    padding: 10px 32px;
+  }
+}
 @keyframes btn-after-move {
   0% {
     transform: rotate(0deg);
@@ -924,7 +1030,7 @@ body {
   width: 100%;
   border-radius: 2px;
   height: 4px;
-  top: 45px;
+  bottom: -32px;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
