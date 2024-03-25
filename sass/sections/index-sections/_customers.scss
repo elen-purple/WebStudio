@@ -1,22 +1,23 @@
 .customers {
-    padding: 94px 0;
+    padding: 60px 0;
 
     &__title {
-        @include text($size: 36px, $weight: 700);
+        @include text($size: 28px, $weight: 700);
         text-align: center;
         letter-spacing: 1.08px;
+        margin-bottom: 30px;
+
+
     }
 
     &__list {
-        @include flex($align: start);
+        @include flex($justify: center, $align: start);
         gap: 30px;
-        justify-content: center;
-        margin-top: 50px;
     }
 
     &__link {
         display: block;
-        padding: 15px 31px;
+        padding: 15px 51px;
         border-radius: 4px;
         border: 1px solid $grey;
         transition: border $transition;
@@ -35,5 +36,29 @@
     &__icon {
         fill: $grey;
         transition: fill $transition;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customers {
+
+        &__link {
+            padding: 15px 59px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers {
+        padding: 94px 0;
+
+        &__title {
+            @include text($size: 36px, $weight: 700);
+            margin-bottom: 50px;
+        }
+
+        &__link {
+            padding: 15px 31px;
+        }
     }
 }

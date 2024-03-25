@@ -3,10 +3,10 @@
     background: $team-background;
 
     &__title {
-        @include text($size: 36px, $weight: 700);
+        @include text($size: 28px, $weight: 700);
         text-align: center;
         letter-spacing: 1.08px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     &__list {
@@ -91,6 +91,11 @@
 @media screen and (min-width: 1200px) {
     .team {
         padding: 94px 0;
+
+        &__title {
+            @include text($size: 36px, $weight: 700);
+            margin-bottom: 50px;
+        }
 
         &__item {
             width: 270px;
