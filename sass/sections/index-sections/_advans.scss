@@ -1,5 +1,5 @@
 .advans {
-  padding: 94px 0 47px;
+  padding: 60px 0;
   background-color: $light-text;
 
   &__list {
@@ -53,6 +53,8 @@
 
 @media screen and (min-width: 1200px) {
   .advans {
+    padding: 94px 0 47px;
+
     &__item {
       width: 270px;
     }
