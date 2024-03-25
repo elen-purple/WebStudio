@@ -885,6 +885,7 @@ body {
   background-image: url(../img/advantanges/advan-4.png);
 } */
 .doing {
+  display: none;
   padding: 47px 0 94px;
   background-color: #ffffff;
 }
@@ -930,6 +931,11 @@ body {
   height: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .doing {
+    display: block;
+  }
+}
 .team {
   padding: 94px 0;
   background: #f5f4fa;
