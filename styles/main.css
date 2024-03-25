@@ -802,17 +802,22 @@ body {
 }
 .advans__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: start;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .advans__item {
-  max-width: 270px;
+  max-width: 450px;
 }
 .advans__wrapper {
-  padding: 25px 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: 4px;
 }
 .advans__subtitle {
@@ -822,6 +827,7 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 .advans__desc {
   color: #757575;
@@ -831,6 +837,22 @@ body {
   letter-spacing: 0.42px;
 }
 
+@media screen and (min-width: 768px) {
+  .advans__item {
+    width: 354px;
+  }
+  .advans__wrapper {
+    margin-bottom: 30px;
+  }
+  .advans__subtitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advans__item {
+    width: 270px;
+  }
+}
 /* .advan-item::before {
   content: "";
   display: block;
