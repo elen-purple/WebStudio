@@ -1,5 +1,5 @@
 .team {
-    padding: 94px 0;
+    padding: 60px 0;
     background: $team-background;
 
     &__title {
@@ -10,13 +10,14 @@
     }
 
     &__list {
-        @include flex($justify: space-between, $align: start);
+        @include flex($justify: start, $align: start);
+        gap: 30px;
     }
 
     &__item {
         transition: transform $transition;
-        width: 270px;
-        padding-bottom: 30px;
+        width: 450px;
+        padding-bottom: 24px;
         border-radius: 0px 0px 4px 4px;
         background: $light-text;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -75,5 +76,25 @@
 
     &__media:nth-child(2) &__icon {
         fill: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team {
+
+        &__item {
+            width: 354px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        padding: 94px 0;
+
+        &__item {
+            width: 270px;
+            padding-bottom: 30px;
+        }
     }
 }
