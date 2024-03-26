@@ -3,20 +3,25 @@
     background: $dark-background;
 
     &__container {
-        @include flex($justify: start, $align: start);
-        gap: 70px;
+        @include flex($align: start);
+        gap: 60px;
     }
 
-    &__wrap {
-        padding-top: 12px;
+    &__wrapper {
+        @include flex($align: start);
+        gap: 60px;
     }
+
+    &__box {
+        @include flex($justify: start);
+        flex-direction: column;
+    }
+
+    // &__wrap {}
 
     &__logo {
-        @include text($color: $accent, $size: 26px, $weight: 700);
-        color: $accent;
+        @include text($color: $accent, $size: 24px, $weight: 700);
         font-family: Raleway;
-        font-size: 26px;
-        font-weight: 700;
         letter-spacing: 0.78px;
     }
 
@@ -29,9 +34,9 @@
     }
 
     &__list {
-        @include flex($justify: start, $align: start);
+        @include flex($justify: start);
         flex-direction: column;
-        gap: 9px;
+        gap: 8px;
     }
 
     &__map {
@@ -90,8 +95,9 @@
     }
 
     &__form {
-        margin-left: auto;
-        padding-top: 12px;
+        @include flex($justify: start);
+        flex-direction: column;
+        width: 450px;
     }
 
     &__title {
@@ -99,31 +105,35 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        text-align: center;
     }
 
-    &__label {
-        @include flex($justify: start, $align: start);
-        gap: 12px;
-    }
+    // &__label {
+    //     @include flex($justify: start);
+    //     flex-direction: column;
+    //     gap: 20px;
+    //     width: 100%;
+    // }
 
     &__name {
-        width: auto;
-        width: 358px;
-        height: 50px;
+        display: block;
+        width: 100%;
     }
 
     &__input {
+        display: block;
         border-radius: 4px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         background-color: transparent;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        width: 358px;
+        width: 100%;
         height: 50px;
-        padding-left: 16px;
+        padding: 0 15px;
         @include text($color: $light-text, $size: 16px);
         line-height: 1.25;
         letter-spacing: 0.48px;
         transition: border $transition;
+        margin-bottom: 20px;
 
         &::placeholder {
             color: rgba(255, 255, 255, 0.6);
@@ -141,17 +151,17 @@
 
     &__btn {
         @include flex($justify: start);
-        align-items: center;
         @include text($color: $light-text, $size: 16px, $weight: 700);
         line-height: 1.88;
         letter-spacing: 0.96px;
         border-radius: 4px;
         background: $accent;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        gap: 10px;
+        gap: 12px;
         border: none;
         padding: 10px 28px;
         transition: background-color $transition;
+        margin: 0 auto;
 
         &:hover,
         &:focus {
@@ -161,5 +171,77 @@
 
     &__send {
         fill: $light-text;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+
+        &__wrapper {
+            gap: 165px;
+        }
+
+        &__wrap {
+            padding-top: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+
+        &__wrapper {
+            gap: 70px;
+        }
+
+        &__logo {
+            @include text($color: $accent, $size: 26px, $weight: 700);
+        }
+
+        &__wrap {
+            padding-top: 12px;
+        }
+
+        &__form {
+            margin-left: auto;
+            width: 570px;
+        }
+
+        &__input {
+            width: 358px;
+            display: inline-block;
+        }
+
+        &__btn {
+            gap: 10px;
+            margin: 0;
+            height: 50px;
+        }
+
+        &__title {
+            text-align: left;
+            width: 570px;
+        }
+
+        &__box {
+            @include flex($align: start, $justify: start);
+        }
+
+        &__list {
+            @include flex($align: start, $justify: start);
+        }
+
+        &__form {
+            padding-top: 12px;
+        }
+
+        &__name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__wrap {
+            width: 206px;
+        }
     }
 }
