@@ -11,8 +11,8 @@
         display: block;
         background-color: $accent;
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         @include flex();
         color: $light-text;
         pointer-events: all;
@@ -28,5 +28,35 @@
 
     &__icon {
         fill: $light-text;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .scroll {
+
+        &__link {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__icon {
+            width: 30px;
+            height: 14.5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .scroll {
+
+        &__link {
+            width: 70px;
+            height: 70px;
+        }
+
+        &__icon {
+            width: 35px;
+            height: 17px;
+        }
     }
 }
