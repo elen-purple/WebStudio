@@ -1,10 +1,11 @@
 .portfolio {
-    padding: 94px 0;
+    padding: 60px 0;
 
     &__buttons {
-        @include flex($align: start);
+        @include flex($justify: start, $align: start);
         gap: 8px;
-        justify-content: center;
+        row-gap: 15px;
+        max-width: 326px;
     }
 
     &__btn {
@@ -20,41 +21,40 @@
         padding: 6px 22px;
         transition: background-color $transition, color $transition,
             box-shadow $transition;
-    }
 
-    &__btn:hover,
-    &__btn:focus {
-        color: $light-text;
-        background-color: $accent;
-        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-            0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+        &:hover,
+        &:focus {
+            color: $light-text;
+            background-color: $accent;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+                0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+        }
     }
 
     &__projects {
-        margin-top: 50px;
+        margin-top: 40px;
         @include flex($justify: start, $align: start);
-        height: 1272px;
         flex-wrap: wrap;
         gap: 30px;
     }
 
     &__project {
         background-color: $light-background;
-        height: 404px;
         width: 100%;
-        flex-basis: calc((100% - 60px) / 3);
+        // flex-basis: calc((100% - 60px) / 3);
     }
 
     &__link {
+        height: 450px;
+        height: 100%;
         display: block;
-        border: 1px solid #eee;
         transition: box-shadow $transition;
-    }
 
-    &__link:hover,
-    &__link:focus {
-        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-            0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        &:hover,
+        &:focus {
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+                0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        }
     }
 
     &__wrap {
@@ -64,6 +64,12 @@
 
     &__img {
         width: 100%;
+        display: none;
+    }
+
+    &__mobile {
+        width: 100%;
+
     }
 
     &__info {
@@ -98,8 +104,9 @@
     }
 
     &__wraper {
-        padding: 0 24px 20px;
-        margin-top: 20px;
+        padding: 20px 24px;
+        border: 1px solid #eee;
+        border-top: 0;
     }
 
     &__subtitle {
@@ -119,5 +126,61 @@
         font-weight: 400;
         line-height: 1.88;
         letter-spacing: 0.48px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+
+        &__buttons {
+            max-width: 100%;
+            @include flex($align: start);
+        }
+
+        &__projects {
+            margin-top: 30px;
+        }
+
+        &__project {
+            width: 354px;
+            height: auto;
+        }
+
+        &__project:nth-child(1) &__wraper {
+            padding-bottom: 56px;
+        }
+
+        &__link:hover &__info,
+        &__link:focus &__info {
+            padding: 49px 24px 77px;
+        }
+
+        &__img {
+            display: block;
+            width: 100%;
+            height: 294px;
+        }
+
+        &__mobile {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio {
+        padding: 94px 0;
+
+        &__project {
+            width: 370px;
+        }
+
+        &__project:nth-child(1) &__wraper {
+            padding-bottom: 20px;
+        }
+
+        &__projects {
+            margin-top: 50px;
+        }
     }
 }
