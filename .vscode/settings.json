@@ -13,5 +13,8 @@
   ],
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
   "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": ["defaults"]
+  "liveSassCompile.settings.autoprefix": ["defaults"],
+  "files.autoSave": "afterDelay",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+  "workbench.statusBar.visible": true
 }

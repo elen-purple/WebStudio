@@ -75,29 +75,23 @@
     &__info {
         position: absolute;
         background: rgba(33, 150, 243, 0.9);
+        padding: 0 24px;
         width: 100%;
         height: 100%;
         top: 100%;
         left: 0;
-        padding: 63px 24px;
+        @include flex();
         transition: transform $transition;
     }
 
     &__link:hover &__info,
     &__link:focus &__info {
-        position: absolute;
-        background: rgba(33, 150, 243, 0.9);
-        width: 100%;
-        height: 100%;
-        top: 100%;
-        left: 0;
-        padding: 63px 24px;
         transform: translate(0, -100%);
     }
 
     &__text {
         color: $light-text;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 1.56;
         letter-spacing: 0.54px;
@@ -126,6 +120,14 @@
         font-weight: 400;
         line-height: 1.88;
         letter-spacing: 0.48px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .portfolio{
+        &__text {
+            font-size: 18px;
+        }
     }
 }
 
