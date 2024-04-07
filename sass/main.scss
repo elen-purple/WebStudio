@@ -35,3 +35,7 @@
     animation-direction: alternate;
     animation-name: link-after-move;
 }
+
+.menu__item:nth-child(1) .menu__link {
+    color: $accent;
+}

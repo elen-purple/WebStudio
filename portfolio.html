@@ -71,7 +71,7 @@
             </a>
           </li>
         </ul>
-        <button class="header__btn">
+        <button data-menu-open class="header__btn">
           <svg class="header__burger" width="40" height="40">
             <use href="./img/svg/icons.svg#icon-menu"></use>
           </svg>
@@ -489,5 +489,78 @@
         </svg>
       </a>
     </div>
+    <div data-menu class="menu is-hidden">
+      <div class="menu__modal">
+        <button data-menu-close class="menu__btn">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./img/svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link">Студія</a>
+          </li>
+          <li class="menu__item">
+            <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+          </li>
+          <li class="menu__item">
+            <a href="#portfolio-contacts" class="menu__link">Контакти</a>
+          </li>
+        </ul>
+        <div class="menu__wrapper">
+          <ul class="menu__contacts">
+            <li class="menu__contact">
+              <a href="tel:+380961111111" class="menu__address"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu__contact">
+              <a href="mailto:info@devstudio.com" class="menu__address"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu__medias">
+            <li class="menu__media">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="menu__run"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="menu__media">
+              <a
+                href="https://twitter.com/?lang=uk"
+                target="_blank"
+                class="menu__run"
+              >
+                Twitter
+              </a>
+            </li>
+            <li class="menu__media">
+              <a
+                href="https://www.facebook.com/?locale=uk_UA"
+                target="_blank"
+                class="menu__run"
+              >
+                Facebook
+              </a>
+            </li>
+            <li class="menu__media">
+              <a
+                href="https://ua.linkedin.com/"
+                target="_blank"
+                class="menu__run"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

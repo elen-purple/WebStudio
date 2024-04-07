@@ -4,6 +4,7 @@
 @import "./utils/placeholders";
 @import "./base/common";
 @import "./base/container";
+@import "./components/menu";
 
 @import "./components/header";
 @import "./components/footer";
@@ -28,4 +29,8 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-name: link-after-move;
+}
+
+.menu__item:nth-child(2) .menu__link {
+    color: $accent;
 }

@@ -59,15 +59,6 @@
         letter-spacing: 0.02em;
         color: $dark-text;
         transition: color $transition;
-
-        .menu__item:nth-child(1) & {
-            color: $accent;
-        }
-
-        &:hover,
-        &:focus {
-            color: $accent;
-        }
     }
 
     &__contacts {
