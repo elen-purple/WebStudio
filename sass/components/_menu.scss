@@ -1,0 +1,117 @@
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $transition;
+}
+
+.no_scroll {
+    overflow: hidden;
+}
+
+.menu {
+    transition: opacity $transition;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    padding: 48px 40px;
+    background-color: $light-background;
+
+    &__modal {
+        // outline: red dashed 3px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        background-color: transparent;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    &__icon {
+        fill: $dark-text;
+        transition: fill $transition;
+
+        &:hover,
+        &:focus {
+            fill: $accent;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    &__item {}
+
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        color: $dark-text;
+        transition: color $transition;
+
+        .menu__item:nth-child(1) & {
+            color: $accent;
+        }
+
+        &:hover,
+        &:focus {
+            color: $accent;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    &__contact {}
+
+    &__address {
+        font-weight: 500;
+        font-size: 34px;
+        letter-spacing: 0.02em;
+        color: $accent;
+
+        .menu__contact:nth-child(2) & {
+            font-size: 24px;
+            color: $middle-text;
+        }
+    }
+
+    &__medias {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    &__media {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+        &:nth-child(4) {
+            padding-right: 0;
+            border-right: none;
+        }
+    }
+
+    &__run {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22222;
+        letter-spacing: 0.02em;
+        color: $accent;
+    }
+}
