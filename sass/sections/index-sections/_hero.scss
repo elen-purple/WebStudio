@@ -6,13 +6,13 @@
     background-repeat: no-repeat;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../../../img/mobile/hero/hero-bg@1x-mobile.webp);
+            rgba(47, 48, 58, 0.4)), url(../img/mobile/hero/hero-bg@1x-mobile.webp);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(../../../img/mobile/hero/hero-bg@2x-mobile.webp);
+                rgba(47, 48, 58, 0.4)), url(../img/mobile/hero/hero-bg@2x-mobile.webp);
     }
 
     &__container {
@@ -47,13 +47,13 @@
 @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(../../../img/tablet/hero/hero-bg@1x-tablet.webp);
+                rgba(47, 48, 58, 0.4)), url(../img/tablet/hero/hero-bg@1x-tablet.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(../../../img/tablet/hero/hero-bg@2x-tablet.webp);
+                    rgba(47, 48, 58, 0.4)), url(../img/tablet/hero/hero-bg@2x-tablet.webp);
         }
 
         &__btn {
@@ -66,14 +66,14 @@
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../../img/desktop/hero/hero-bg@1x-desktop.webp);
+            url(../img/desktop/hero/hero-bg@1x-desktop.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../../img/desktop/hero/hero-bg@2x-desktop.webp);
+                url(../img/desktop/hero/hero-bg@2x-desktop.webp);
         }
 
         padding: 200px 0;
