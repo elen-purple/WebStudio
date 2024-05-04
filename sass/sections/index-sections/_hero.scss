@@ -72,8 +72,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../img/desktop/hero/hero-bg@2x-desktop.webp);
+                    rgba(47, 48, 58, 0.4)), url(../img/desktop/hero/hero-bg@2x-desktop.webp);
         }
 
         padding: 200px 0;
